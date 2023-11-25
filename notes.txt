@@ -1,0 +1,22 @@
+web scraping 
+------------------------------------------
+create project
+$ scrapy startproject <project_name>
+
+testing
+$ scrapy shell "your_url"
+>> response.xpath("//h1/text()").get()
+
+create app
+$ scrapy genspider <app_name> <project_url>
+
+running
+$ scrapy crawl <app_name>
+$ scrapy crawl <app_name> -o <output_ext>
+------------------------------------------
+
+web crawling
+------------------------------------------
+create app
+$ scrapy genspider -t crawl transcripts <subslikescript.com>
+------------------------------------------
